@@ -11,15 +11,14 @@ const dirs = {
 };
 
 const files = {
-  indexJS: 'bootstrap.js',
-  indexSASS: 'index.sass'
+  indexJS: 'bootstrap.js'
 }
 
 gulp.task('serve', () => {
   var server = gls.static(`/`, port);
   server.start();
 
-  gulp.watch([`${dirs.dev}/${files.indexJS}`], (file) => {
+  gulp.watch([`${dirs.dev}/**/*.js`], (file) => {
     server.notify.apply(server, [file]);
   });
 });
