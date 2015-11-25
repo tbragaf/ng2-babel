@@ -15,7 +15,7 @@ const files = {
   indexSASS: 'index.sass'
 }
 
-gulp.task('serve', function () {
+gulp.task('serve', () => {
   var server = gls.static(`/`, port);
   server.start();
 
@@ -29,7 +29,7 @@ gulp.task('copy', () => {
     .pipe(gulp.dest(`${dirs.dev}`));
 });
 
-gulp.task('build', function () {
+gulp.task('build', () => {
   return gulp.src(`${dirs.src}/**/*.js`)
     .pipe(babel())
     .pipe(gulp.dest(`${dirs.dev}`));
