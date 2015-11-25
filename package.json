@@ -3,13 +3,17 @@
   "version": "0.0.1",
   "description": "Angular 2 with babel.",
   "author": "Tiago Braga <braga.tiago.93@gmail.com>",
-  "repository": "shuhei/babel-angular2-app",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tbragaf/ng2-babel.git"
+  },
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^5.8.0",
     "del": "^2.1.0",
     "gulp": "^3.9.0",
-    "gulp-babel": "^5.3.0"
+    "gulp-babel": "^5.3.0",
+    "gulp-live-server": "0.0.29"
   },
   "dependencies": {
     "angular2": "2.0.0-alpha.46"
