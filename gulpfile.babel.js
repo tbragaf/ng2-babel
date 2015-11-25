@@ -19,7 +19,7 @@ gulp.task('serve', () => {
   var server = gls.static(`/`, port);
   server.start();
 
-  gulp.watch([`${dirs.dev}/${files.indexJS}`], function (file) {
+  gulp.watch([`${dirs.dev}/${files.indexJS}`], (file) => {
     server.notify.apply(server, [file]);
   });
 });
