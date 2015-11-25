@@ -10,10 +10,6 @@ const dirs = {
   dev: 'dev'
 };
 
-const files = {
-  indexJS: 'bootstrap.js'
-}
-
 gulp.task('serve', () => {
   var server = gls.static(`/`, port);
   server.start();
