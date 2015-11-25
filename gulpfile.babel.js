@@ -25,7 +25,7 @@ gulp.task('build', function () {
 });
 
 gulp.task('clean', () => {
-  return del('dist');
+  return del(dirs.dev);
 });
 
 gulp.task('default', ['copy', 'build']);
