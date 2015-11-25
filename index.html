@@ -2,11 +2,19 @@
 <html>
   <head>
     <title>Build Angular 2 app with babel</title>
+    
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    
+    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+    <script src="node_modules/angular2/bundles/router.dev.js"></script>
   </head>
   <body>
     <app>Loading...</app>
     
-    <script src="node_modules/angular2/angular2.js"></script>
-    <script src="dev/bootstrap.js"></script>
+    <script>
+      System.import('dev/bootstrap.js').catch(function (response) {
+        console.error(response);
+      });
+    </script>
   </body>
 </html>
