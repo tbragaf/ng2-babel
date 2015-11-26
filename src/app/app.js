@@ -4,7 +4,7 @@ import { Component, View, ElementRef } from 'angular2/angular2';
   selector: 'app'
 })
 @View({
-  templateUrl: 'dev/app/app.html'
+  templateUrl: 'app/app.html'
 })
 export class App {
   constructor(elementRef : ElementRef) {
