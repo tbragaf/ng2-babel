@@ -11,4 +11,4 @@ Angular2 with Babel and Gulp
 
 4. Run 'gulp'
 
-5. Open browser: localhost:12345/dist
+5. Open browser: localhost:12345/dev
