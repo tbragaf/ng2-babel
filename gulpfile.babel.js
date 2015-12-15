@@ -7,31 +7,31 @@ const port = 12345;
 const dirs = {
   src: 'src',
   dist: 'dist', // Not being used for now. To be used in prodution
-  dev: 'dev'
+  build: 'build'
 };
 
 gulp.task('serve', () => {
   var server = gls.static(`/`, port);
   server.start();
 
-  gulp.watch([`${dirs.dev}/**/*.js`], (file) => {
+  gulp.watch([`${dirs.build}/**/*.js`], (file) => {
     server.notify.apply(server, [file]);
   });
 });
 
 gulp.task('copy', () => {
   return gulp.src(`${dirs.src}/**/*.html`)
-    .pipe(gulp.dest(`${dirs.dev}`));
+    .pipe(gulp.dest(`${dirs.build}`));
 });
 
 gulp.task('build', () => {
   return gulp.src(`${dirs.src}/**/*.js`)
     .pipe(babel())
-    .pipe(gulp.dest(`${dirs.dev}`));
+    .pipe(gulp.dest(`${dirs.build}`));
 });
 
 gulp.task('clean', () => {
-  return del(dirs.dev);
+  return del(dirs.build);
 });
 
 gulp.task('default', ['copy', 'build']);
