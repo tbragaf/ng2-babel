@@ -1,4 +1,4 @@
-# ng2-babel
+# ng2-seed-babel
 Angular2 with Babel and Gulp
 
 ##Getting Started
