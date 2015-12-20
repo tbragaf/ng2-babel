@@ -1,11 +1,11 @@
 {
-  "name": "ng2-babel",
+  "name": "ng2-seed-babel",
   "version": "0.0.1",
   "description": "Angular2 with babel and gulp.",
   "author": "Tiago Braga <braga.tiago.93@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tbragaf/ng2-babel.git"
+    "url": "git+https://github.com/tbragaf/ng2-seed-babel.git"
   },
   "license": "MIT",
   "devDependencies": {
